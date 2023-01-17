@@ -11,6 +11,7 @@
 		81C725B02977059600D5694D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725AF2977059600D5694D /* ContentView.swift */; };
 		81C725B22977059900D5694D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C725B12977059900D5694D /* Assets.xcassets */; };
 		81C725B52977059900D5694D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C725B42977059900D5694D /* Preview Assets.xcassets */; };
+		81C725BD2977064E00D5694D /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725BC2977064E00D5694D /* RectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		81C725AF2977059600D5694D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81C725B12977059900D5694D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C725B42977059900D5694D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81C725BC2977064E00D5694D /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				81C725AD2977059600D5694D /* CalculatorApp.swift */,
+				81C725BB297705D200D5694D /* Views */,
 				81C725AF2977059600D5694D /* ContentView.swift */,
+				81C725BC2977064E00D5694D /* RectangleView.swift */,
 				81C725B12977059900D5694D /* Assets.xcassets */,
 				81C725B32977059900D5694D /* Preview Content */,
 			);
@@ -65,6 +69,13 @@
 				81C725B42977059900D5694D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81C725BB297705D200D5694D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				81C725B02977059600D5694D /* ContentView.swift in Sources */,
 				81C725AE2977059600D5694D /* CalculatorApp.swift in Sources */,
+				81C725BD2977064E00D5694D /* RectangleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
