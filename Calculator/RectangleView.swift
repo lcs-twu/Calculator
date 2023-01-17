@@ -35,22 +35,22 @@ struct RectangleView: View {
             
             Text(String(length))
             //slider
-            Slider {value: Binding.constant(length)},
+            Slider(value: $length,
                    in: 0...100,
                     label: {Text("length")},
-                   minimumValueLabel: (Text("0")),
-                   maximumValueLabel: (Text("100")))
+                   minimumValueLabel: {Text("0")},
+                   maximumValueLabel: {Text("100")})
             Text("width")
                 .bold()
                 .font(.title2)
             
             Text(String(width))
             
-            Slider{value: Binding.constant(width)},
+            Slider(value: $width,
                    in: 0...100,
                    label: {Text("width")},
-                   minimumValueLabel: (Text("0")),
-                   maximumValueLabel: (Text("100")))
+                   minimumValueLabel: {Text("0")},
+                   maximumValueLabel: {Text("100")})
             
             Text("area")
                 .bold()
