@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct RectangleView: View {
+    
+    //MARK: Store property
+    
+    //MARK: Computer property
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack {
+                Image("Rectangle")
+                    .resizable()
+                    .scaledToFit()
+                .frame(width: 250)
+                Spacer()
+                
+            }
+            
+            Spacer()
+        }
     }
 }
 
