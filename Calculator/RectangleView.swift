@@ -21,44 +21,47 @@ struct RectangleView: View {
     var body: some View {
         VStack{
             HStack {
-                Image("Rectangle")
-                    .resizable()
-                    .scaledToFit()
-                .frame(width: 250)
-                Spacer()
+                Group{
+                    Image("Rectangle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 250)
+                    Spacer()
+                    
+                    
+                    //length
+                    LabelView(name: "length", value: length)
+
+                    //slider
+                    Slider(value: $length,
+                           in: 0...100,
+                           label: {Text("length")},
+                           minimumValueLabel: {Text("0")},
+                           maximumValueLabel: {Text("100")})
+                    Text("width")
+                        .bold()
+                        .font(.title2)
+                    
+                    Text(String(width))
+                    
+                    Slider(value: $width,
+                           in: 0...100,
+                           label: {Text("width")},
+                           minimumValueLabel: {Text("0")},
+                           maximumValueLabel: {Text("100")})
+                }
+                Text("area")
+                    .bold()
+                    .font(.title2)
                 
+                Text(String(area))
+                Slider(value: area,
+                       in: 0...width*length,
+                       label: {Text("area")},
+                       minimumValueLabel: {Text("0")}, maximumValueLabel: {Text("10000")})
+                
+                Spacer()
             }
-            //length
-            Text("length")
-                .bold()
-                .font(.title2)
-            
-            Text(String(length))
-            //slider
-            Slider(value: $length,
-                   in: 0...100,
-                    label: {Text("length")},
-                   minimumValueLabel: {Text("0")},
-                   maximumValueLabel: {Text("100")})
-            Text("width")
-                .bold()
-                .font(.title2)
-            
-            Text(String(width))
-            
-            Slider(value: $width,
-                   in: 0...100,
-                   label: {Text("width")},
-                   minimumValueLabel: {Text("0")},
-                   maximumValueLabel: {Text("100")})
-            
-            Text("area")
-                .bold()
-                .font(.title2)
-            
-            Text(String(area))
-            
-            Spacer()
         }
     }
 }
