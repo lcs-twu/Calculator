@@ -10,9 +10,10 @@ import SwiftUI
 struct RectangleView: View {
     
     //MARK: Store property
-    let length: Double = 7
-    let width: Double = 5
-    let height: Double = 6
+    //let SWIFTUI to watch those interfaces
+    @State var length: Double = 7
+    @State var width: Double = 5
+    @State var height: Double = 6
     //MARK: Computer property
     var area: Double{
         return length*width
@@ -33,12 +34,23 @@ struct RectangleView: View {
                 .font(.title2)
             
             Text(String(length))
-            
+            //slider
+            Slider {value: Binding.constant(length)},
+                   in: 0...100,
+                    label: {Text("length")},
+                   minimumValueLabel: (Text("0")),
+                   maximumValueLabel: (Text("100")))
             Text("width")
                 .bold()
                 .font(.title2)
             
             Text(String(width))
+            
+            Slider{value: Binding.constant(width)},
+                   in: 0...100,
+                   label: {Text("width")},
+                   minimumValueLabel: (Text("0")),
+                   maximumValueLabel: (Text("100")))
             
             Text("area")
                 .bold()
