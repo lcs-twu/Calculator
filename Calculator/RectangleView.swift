@@ -10,9 +10,13 @@ import SwiftUI
 struct RectangleView: View {
     
     //MARK: Store property
-    
+    let length: Double = 7
+    let width: Double = 5
+    let height: Double = 6
     //MARK: Computer property
-    
+    var area: Double{
+        return length*width
+    }
     var body: some View {
         VStack{
             HStack {
@@ -23,6 +27,12 @@ struct RectangleView: View {
                 Spacer()
                 
             }
+            //length
+            Text("length")
+                .bold()
+                .font(.title2)
+            
+            Text(String(length))
             
             Spacer()
         }
