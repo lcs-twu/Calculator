@@ -34,6 +34,18 @@ struct RectangleView: View {
             
             Text(String(length))
             
+            Text("width")
+                .bold()
+                .font(.title2)
+            
+            Text(String(width))
+            
+            Text("area")
+                .bold()
+                .font(.title2)
+            
+            Text(String(area))
+            
             Spacer()
         }
     }
