@@ -37,9 +37,7 @@ struct RectangleView: View {
                        label: {Text("length")},
                        minimumValueLabel: {Text("0")},
                        maximumValueLabel: {Text("100")})
-                Text("width")
-                    .bold()
-                    .font(.title2)
+                
                 
                 LabelView(name: "width", value: width)
                 
@@ -49,9 +47,7 @@ struct RectangleView: View {
                        minimumValueLabel: {Text("0")},
                        maximumValueLabel: {Text("100")})
                 
-                Text("area")
-                    .bold()
-                    .font(.title2)
+                
                 
                 LabelView(name: "area", value: area)
                 

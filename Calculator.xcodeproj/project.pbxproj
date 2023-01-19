@@ -76,8 +76,8 @@
 		81C725BB297705D200D5694D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				81C725DB2977122000D5694D /* LabelView.swift */,
 				81C725AF2977059600D5694D /* ContentView.swift */,
+				81C725DB2977122000D5694D /* LabelView.swift */,
 				81C725BC2977064E00D5694D /* RectangleView.swift */,
 				81C725DD2979D0EE00D5694D /* RectangularPrismView.swift */,
 			);

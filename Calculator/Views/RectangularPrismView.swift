@@ -15,6 +15,10 @@ struct RectangularPrismView: View {
     var volume: Double{
         return length*width*height
     }
+    
+    var surfaceArea: Double{
+        return 2*length*height+2*length*width+2*height*width
+    }
     var body: some View {
         VStack{
             HStack {
@@ -35,9 +39,6 @@ struct RectangularPrismView: View {
                        label: {Text("length")},
                        minimumValueLabel: {Text("0")},
                        maximumValueLabel: {Text("100")})
-                Text("width")
-                    .bold()
-                    .font(.title2)
                 
                 LabelView(name: "width", value: width)
                 
@@ -55,14 +56,14 @@ struct RectangularPrismView: View {
                        minimumValueLabel: {Text("0")},
                        maximumValueLabel: {Text("100")})
             }
-            Text("volume")
-                .bold()
-                .font(.title2)
             
             LabelView(name: "volume", value: volume)
             
             Text("\(    volume.formatted(.number.precision(.fractionLength(0...2))))")
             
+            LabelView(name: "surface area", value: surfaceArea)
+            
+            Text("\(    surfaceArea.formatted(.number.precision(.fractionLength(0...2))))")
         }
         
         Spacer()
