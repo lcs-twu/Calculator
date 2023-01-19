@@ -1,13 +1,13 @@
 //
-//  LabelView.swift
+//  Label2View.swift
 //  Calculator
 //
-//  Created by Tom Wu on 2023-01-17.
+//  Created by Tom Wu on 2023-01-19.
 //
 
 import SwiftUI
 
-struct LabelView: View {
+struct OutputView: View {
     
     // MARK: Stroed properties
     let name: String
@@ -30,8 +30,9 @@ struct LabelView: View {
     }
 }
 
-struct LabelView_Previews: PreviewProvider {
+struct OutputView_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView(name: "Height", value: 180)
+        OutputView(name: "Height", value: 100)
     }
 }
+

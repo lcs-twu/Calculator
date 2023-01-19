@@ -12,8 +12,9 @@
 		81C725B22977059900D5694D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C725B12977059900D5694D /* Assets.xcassets */; };
 		81C725B52977059900D5694D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C725B42977059900D5694D /* Preview Assets.xcassets */; };
 		81C725BD2977064E00D5694D /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725BC2977064E00D5694D /* RectangleView.swift */; };
-		81C725DC2977122000D5694D /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725DB2977122000D5694D /* LabelView.swift */; };
+		81C725DC2977122000D5694D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725DB2977122000D5694D /* InputView.swift */; };
 		81C725DE2979D0EE00D5694D /* RectangularPrismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725DD2979D0EE00D5694D /* RectangularPrismView.swift */; };
+		81C725E02979DC2900D5694D /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C725DF2979DC2900D5694D /* OutputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		81C725B12977059900D5694D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C725B42977059900D5694D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81C725BC2977064E00D5694D /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
-		81C725DB2977122000D5694D /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		81C725DB2977122000D5694D /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		81C725DD2979D0EE00D5694D /* RectangularPrismView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPrismView.swift; sourceTree = "<group>"; };
+		81C725DF2979DC2900D5694D /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				81C725AF2977059600D5694D /* ContentView.swift */,
-				81C725DB2977122000D5694D /* LabelView.swift */,
+				81C725DB2977122000D5694D /* InputView.swift */,
+				81C725DF2979DC2900D5694D /* OutputView.swift */,
 				81C725BC2977064E00D5694D /* RectangleView.swift */,
 				81C725DD2979D0EE00D5694D /* RectangularPrismView.swift */,
 			);
@@ -154,8 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C725E02979DC2900D5694D /* OutputView.swift in Sources */,
 				81C725B02977059600D5694D /* ContentView.swift in Sources */,
-				81C725DC2977122000D5694D /* LabelView.swift in Sources */,
+				81C725DC2977122000D5694D /* InputView.swift in Sources */,
 				81C725DE2979D0EE00D5694D /* RectangularPrismView.swift in Sources */,
 				81C725AE2977059600D5694D /* CalculatorApp.swift in Sources */,
 				81C725BD2977064E00D5694D /* RectangleView.swift in Sources */,

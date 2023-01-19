@@ -31,39 +31,19 @@ struct RectangularPrismView: View {
             }
             Group{
                 //length
-                LabelView(name: "length", value: length)
+                InputView(name: "length", value: $length)
+
                 
-                //slider
-                Slider(value: $length,
-                       in: 0...100,
-                       label: {Text("length")},
-                       minimumValueLabel: {Text("0")},
-                       maximumValueLabel: {Text("100")})
+                InputView(name: "width", value: $width)
+
                 
-                LabelView(name: "width", value: width)
-                
-                Slider(value: $width,
-                       in: 0...100,
-                       label: {Text("width")},
-                       minimumValueLabel: {Text("0")},
-                       maximumValueLabel: {Text("100")})
-                
-                LabelView(name: "height", value: height)
-                
-                Slider(value: $height,
-                       in: 0...100,
-                       label: {Text("height")},
-                       minimumValueLabel: {Text("0")},
-                       maximumValueLabel: {Text("100")})
+                InputView(name: "height", value: $height)
+
             }
             
-            LabelView(name: "volume", value: volume)
+            OutputView(name: "volume", value: volume)
             
-            Text("\(    volume.formatted(.number.precision(.fractionLength(0...2))))")
-            
-            LabelView(name: "surface area", value: surfaceArea)
-            
-            Text("\(    surfaceArea.formatted(.number.precision(.fractionLength(0...2))))")
+            OutputView(name: "surface area", value: surfaceArea)
         }
         
         Spacer()

@@ -15,7 +15,7 @@ struct RectangleView: View {
     @State var width: Double = 5
     //MARK: Computer property
     var area: Double{
-        return length*width
+        return length * width
     }
     var body: some View {
         VStack{
@@ -29,27 +29,15 @@ struct RectangleView: View {
                 }
             }
                 //length
-                LabelView(name: "length", value: length)
+                InputView(name: "length", value: $length)
                 
                 //slider
-                Slider(value: $length,
-                       in: 0...100,
-                       label: {Text("length")},
-                       minimumValueLabel: {Text("0")},
-                       maximumValueLabel: {Text("100")})
-                
-                
-                LabelView(name: "width", value: width)
-                
-                Slider(value: $width,
-                       in: 0...100,
-                       label: {Text("width")},
-                       minimumValueLabel: {Text("0")},
-                       maximumValueLabel: {Text("100")})
                 
                 
                 
-                LabelView(name: "area", value: area)
+                InputView(name: "width", value: $width)
+     
+                OutputView(name: "area", value: area)
                 
             }
             
