@@ -23,8 +23,8 @@ struct LabelView: View {
                 .bold()
                 .font(.title2)
             
-            Text("\(value)")
-
+            Text("\(    value.formatted(.number.precision(.fractionLength(0...2))))")
+            
         }
 
     }
