@@ -11,7 +11,15 @@ struct OutputView: View {
     
     // MARK: Stroed properties
     let name: String
-    let value: Double
+    let value: Double?
+    
+    var output: String {
+        guard let unwrappedValue = value else {
+            return "Cannot be calculated; please provide valid input."
+        }
+        
+        return "\(unwrappedValue.formatted(.number.precision(.fractionLength(0...2)))))"
+    }
     
     // MARK: Computed properties
     var body: some View {
@@ -23,7 +31,7 @@ struct OutputView: View {
                 .bold()
                 .font(.title2)
             
-            Text("\(    value.formatted(.number.precision(.fractionLength(0...2))))")
+            Text(output)
             
         }
 

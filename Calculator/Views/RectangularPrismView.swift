@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct RectangularPrismView: View {
-    @State var length: Double = 7
-    @State var width: Double = 5
-    @State var height: Double = 6
+    @State var length: Double = ""
+    @State var width: Double = ""
+    @State var height: Double = ""
     
-    var volume: Double{
-        return length*width*height
+    var volume: Double? {
+        guard let length = Double(length) else { return nil }
+        guard let width = Double(width) else { return nil }
+        guard let height = Double(height) else{ return nil }
+        return length * width * height
     }
     
     var surfaceArea: Double{
